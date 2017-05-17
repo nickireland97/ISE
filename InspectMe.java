@@ -120,12 +120,12 @@ public class InspectMe
         Scanner input = new Scanner("System.in");
         
         System.out.print("Enter kilometres: ");
-        miles = input.nextDouble();
-        
-        System.out.print("Enter miles: " );
         kilometres = input.nextDouble();
         
-        if(miles == kilometres)
+        System.out.print("Enter miles: " );
+        miles = input.nextDouble();
+        
+        if(math.abs(miles - kilometres) < 0.00001)
         {
             System.out.println("Distances are equal");
         }
