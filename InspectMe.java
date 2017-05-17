@@ -16,17 +16,17 @@ public class InspectMe
         
         System.out.println("Dave's Mysterious Program");
         System.out.println();
-        choice = readLineWithDefault("convert", "Choose between 'convert', 'compare' or 'stats':");
+        choice = readLineWithDefault("Choose between 'convert', 'compare' or 'stats':", "convert");
         
-        if(choice == "convert")
+        if(choice.equals("convert"))
         {
             unitConvertMenu();
         }
-        else if(choice == "compare")
+        else if(choice.equals("compare"))
         {
             unitCompare();
         }
-        else if(choice == "stats")
+        else if(choice.equals("stats"))
         {
             stats();
         }
